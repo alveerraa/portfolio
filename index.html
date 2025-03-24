@@ -1,24 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home - Your Name</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Navbar -->
     <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <div class="logo">YourName</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    
+
+    <!-- Hero Section -->
     <header class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Aspiring Cloud & Full Stack Developer</p>
-        <a href="about.html" class="btn">Know More</a>
+        <h1>Hi, I'm <span>Your Name</span></h1>
+        <p>Cloud & Full Stack Developer</p>
+        <a href="#contact" class="btn">Contact Me</a>
     </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Passionate about Cloud & Full Stack Development, I love building scalable web applications.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <span>Java</span>
+                <span>Python</span>
+                <span>Docker</span>
+                <span>AWS</span>
+                <span>React.js</span>
+                <span>Node.js</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Inventory Optimization Platform</h3>
+                <p>Optimizing inventory management with AI & automation.</p>
+                <a href="https://github.com/yourrepo" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:yourname@gmail.com">yourname@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </div>
+    </section>
+
 </body>
 </html>
+
 
 
