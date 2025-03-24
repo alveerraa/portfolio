@@ -1,10 +1,9 @@
-/* General styles */
-body {
-    font-family: 'Poppins', sans-serif;
+/* Reset Default Styles */
+* {
     margin: 0;
     padding: 0;
-    background: #fff;
-    color: #1a1a1a;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar */
@@ -25,6 +24,10 @@ nav {
     list-style: none;
     display: flex;
     gap: 20px;
+}
+
+.nav-links li {
+    list-style: none;
 }
 
 .nav-links li a {
