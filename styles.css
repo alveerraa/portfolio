@@ -2,270 +2,174 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif; /* Clean and modern font */
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f4f7f8;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
 
-/* =======================
-   Navbar
-   ======================= */
+/* Navbar */
 .navbar {
-    background: #fff;
-    padding: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #222;
+    padding: 15px 30px;
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
     z-index: 1000;
 }
 
-.navbar a {
+.navbar .logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    color: #fff;
     font-size: 16px;
-    padding: 10px 15px;
-    transition: 0.3s;
+    transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-    color: #007bff;
+.nav-links a:hover {
+    color: #f0a500;
 }
 
-/* =======================
-   Hero Section (Header)
-   ======================= */
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 120px 20px 80px;
+    padding: 150px 20px;
+    background: linear-gradient(to right, #f0a500, #ff7700);
+    color: white;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #222;
+    font-size: 48px;
 }
 
-.hero h1 span {
-    color: #007bff;
+.hero span {
+    color: #222;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #555;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
     margin-top: 10px;
 }
 
-/* =======================
-   Profile Picture
-   ======================= */
-.profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 20px auto;
-    border: 3px solid #007bff;
-}
-
-/* =======================
-   Buttons
-   ======================= */
-.btn {
-    display: inline-block;
-    background: #007bff;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.3s;
-    margin-top: 15px;
-}
-
 .btn:hover {
-    background: #0056b3;
-    transform: scale(1.05);
+    background: #444;
 }
 
-/* =======================
-   Sections
-   ======================= */
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
 .container {
     max-width: 900px;
-    margin: 0 auto;
-    padding: 60px 20px;
+    margin: auto;
 }
 
-/* Section Titles */
-.section h2 {
-    font-size: 2rem;
-    color: #222;
-    border-bottom: 3px solid #007bff;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-/* =======================
-   Skills Section
-   ======================= */
-.skills-list {
+/* Skills */
+.skills-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    justify-content: center;
+    gap: 10px;
 }
 
-.skill {
-    background: #007bff;
+.skills-grid span {
+    background: #222;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 15px;
     border-radius: 5px;
-    font-size: 15px;
-    font-weight: 600;
 }
 
-/* =======================
-   Work / Projects Section
-   ======================= */
+/* Projects */
 .project {
-    background: white;
+    background: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 25px;
-    transition: 0.3s;
-}
-
-.project:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
-    color: #007bff;
     margin-bottom: 10px;
-}
-
-.project p {
-    color: #555;
 }
 
 .project a {
     text-decoration: none;
-    color: #007bff;
-    font-weight: 600;
-    transition: 0.3s;
+    color: #ff7700;
+    font-weight: bold;
 }
 
 .project a:hover {
-    text-decoration: underline;
+    color: #f0a500;
 }
 
-/* =======================
-   Contact Section
-   ======================= */
-.contact-info {
-    font-size: 1.2rem;
-}
-
-.contact-info a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Form */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contact-form button {
-    background: #007bff;
-    color: white;
-    padding: 12px 15px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-form button:hover {
-    background: #0056b3;
-}
-
-/* =======================
-   Resume Download Button
-   ======================= */
-.resume-btn {
-    display: block;
-    width: 220px;
-    text-align: center;
-    background: #007bff;
-    color: white;
-    padding: 14px;
-    border-radius: 5px;
+/* Contact */
+#contact a {
+    color: #ff7700;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
-    margin: 30px auto;
-    transition: 0.3s;
 }
 
-.resume-btn:hover {
-    background: #0056b3;
-    transform: scale(1.05);
+#contact a:hover {
+    color: #f0a500;
 }
 
-/* =======================
-   Responsive Design
-   ======================= */
+/* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 36px;
     }
 
-    .profile-pic {
-        width: 120px;
-        height: 120px;
-    }
-
-    .container {
-        padding: 40px 15px;
-    }
-
-    .skills-list {
+    .nav-links {
         flex-direction: column;
+        display: none;
     }
 
-    .navbar {
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .skills-grid {
         flex-direction: column;
-        text-align: center;
-        gap: 10px;
     }
 }
+
 
