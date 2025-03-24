@@ -1,73 +1,81 @@
-body {
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Clean and modern font */
+}
+
+body {
+    background-color: #f4f7f8;
     color: #333;
+    line-height: 1.6;
 }
 
 /* =======================
    Navbar
    ======================= */
 .navbar {
+    background: #fff;
+    padding: 15px 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 1000;
 }
 
 .navbar a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 16px;
     padding: 10px 15px;
     transition: 0.3s;
 }
 
 .navbar a:hover {
-    color: #4A90E2;
-    transform: scale(1.1);
+    color: #007bff;
 }
 
 /* =======================
-   Hero Section (Profile)
+   Hero Section (Header)
    ======================= */
 .hero {
     text-align: center;
-    padding: 100px 20px;
-    margin-top: 50px;
+    padding: 120px 20px 80px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #222;
 }
 
 .hero h1 span {
-    background: linear-gradient(45deg, #4A90E2, #002D62);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 3rem;
-    font-weight: bold;
+    color: #007bff;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #666;
+    color: #555;
+    margin-top: 10px;
 }
 
 /* =======================
    Profile Picture
    ======================= */
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
     margin: 20px auto;
-    border: 3px solid #4A90E2;
+    border: 3px solid #007bff;
 }
 
 /* =======================
@@ -75,17 +83,19 @@ body {
    ======================= */
 .btn {
     display: inline-block;
-    background: #4A90E2;
+    background: #007bff;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 600;
     transition: 0.3s;
+    margin-top: 15px;
 }
 
 .btn:hover {
-    background: #002D62;
+    background: #0056b3;
     transform: scale(1.05);
 }
 
@@ -95,19 +105,16 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
-.section {
-    margin-bottom: 40px;
-}
-
+/* Section Titles */
 .section h2 {
     font-size: 2rem;
-    color: #333;
-    border-bottom: 2px solid #4A90E2;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
+    color: #222;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 /* =======================
@@ -120,39 +127,44 @@ body {
 }
 
 .skill {
-    background: #4A90E2;
+    background: #007bff;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 /* =======================
    Work / Projects Section
    ======================= */
 .project {
-    background: #fff;
+    background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .project h3 {
-    color: #4A90E2;
+    color: #007bff;
     margin-bottom: 10px;
 }
 
-.project img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.project p {
+    color: #555;
 }
 
 .project a {
     text-decoration: none;
-    color: #4A90E2;
-    font-weight: bold;
+    color: #007bff;
+    font-weight: 600;
     transition: 0.3s;
 }
 
@@ -168,9 +180,9 @@ body {
 }
 
 .contact-info a {
-    color: #4A90E2;
+    color: #007bff;
     text-decoration: none;
-    transition: 0.3s;
+    font-weight: 600;
 }
 
 .contact-info a:hover {
@@ -187,23 +199,23 @@ body {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .contact-form button {
-    background: #4A90E2;
+    background: #007bff;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border: none;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .contact-form button:hover {
-    background: #002D62;
+    background: #0056b3;
 }
 
 /* =======================
@@ -211,20 +223,21 @@ body {
    ======================= */
 .resume-btn {
     display: block;
-    width: 200px;
+    width: 220px;
     text-align: center;
-    background: #4A90E2;
+    background: #007bff;
     color: white;
-    padding: 12px 20px;
+    padding: 14px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    margin: 20px auto;
+    font-size: 16px;
+    margin: 30px auto;
     transition: 0.3s;
 }
 
 .resume-btn:hover {
-    background: #002D62;
+    background: #0056b3;
     transform: scale(1.05);
 }
 
@@ -232,17 +245,17 @@ body {
    Responsive Design
    ======================= */
 @media (max-width: 768px) {
-    .hero h1 span {
-        font-size: 2rem;
+    .hero h1 {
+        font-size: 2.5rem;
     }
 
     .profile-pic {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .container {
-        padding: 10px;
+        padding: 40px 15px;
     }
 
     .skills-list {
@@ -251,7 +264,8 @@ body {
 
     .navbar {
         flex-direction: column;
+        text-align: center;
         gap: 10px;
-        padding: 10px;
     }
 }
+
