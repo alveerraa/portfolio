@@ -49,7 +49,7 @@ or http://alv-portfolio.s3-website.ap-south-1.amazonaws.com
 
 ## 📸 Screenshot
 
-![Website Screenshot](./screenshot.png)
+![Website Screenshots](/ss.pdf.pdf)
 
 ## 🧠 What I Learned
 
