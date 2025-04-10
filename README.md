@@ -5,7 +5,6 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 ## 🚀 Live Demo
 
 Check it out here: https://alveerraa.github.io/portfolio/
-or http://alv-portfolio.s3-website.ap-south-1.amazonaws.com
 ---
 
 ## 🛠️ Tech Stack
@@ -41,7 +40,7 @@ or http://alv-portfolio.s3-website.ap-south-1.amazonaws.com
 
 ### 2. Upload to S3
 - Create an S3 bucket
-- Enable static website hosting
+- Enable static website hosting (later removed to avoid billing after testing).  
 - Upload your files
 - Set `index.html` as the index document
 - Make files public (if required)
@@ -57,6 +56,7 @@ or http://alv-portfolio.s3-website.ap-south-1.amazonaws.com
 - JavaScript-based interactivity and DOM manipulation
 - Page structure planning and semantic HTML
 - Clean UI/UX design principles
+- - Hosting static websites using AWS S3
 
 ---
 
