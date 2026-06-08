@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="styles.css" />
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,900;1,9..144,400&family=JetBrains+Mono:wght@300;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+
+	<!-- box icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+	<title>Alveera Ahmad | Portfolio</title>
+</head>
+<body class="dark-mode">
+
+	<!-- LOADER -->
+	<div class="loader" id="loader">
+		<div class="loader-text">Loading Portfolio</div>
+		<div class="loader-line"></div>
+	</div>
+
+	<!-- CUSTOM CURSOR -->
+	<div class="cursor" id="cursor"></div>
+	<div class="cursor-trail" id="cursor-trail"></div>
+
+	<!-- FLOATING WORK PREVIEW -->
+	<div class="work-preview" id="work-preview">
+		<img id="work-preview-img" src="" alt=""/>
+	</div>
+
+	<!-- header -->
+	<header class="l-header">
+		<nav class="nav bd-grid">
+			<a href="#home" class="nav__logo" data-hover>
+				<span>Alveera</span><span class="nav__logo-num">/ AHMAD</span>
+			</a>
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home" class="nav__link active-link" data-hover><span class="num">01</span>Home</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link" data-hover><span class="num">02</span>About</a></li>
+					<li class="nav__item"><a href="#skills" class="nav__link" data-hover><span class="num">03</span>Skills</a></li>
+					<li class="nav__item"><a href="#work" class="nav__link" data-hover><span class="num">04</span>Work</a></li>
+					<li class="nav__item"><a href="#contact" class="nav__link" data-hover><span class="num">05</span>Contact</a></li>
+					<li class="nav__item"><a href="Alveera_Resume.pdf" class="nav__link nav__resume" target="_blank" data-hover>Resume ↗</a></li>
+				</ul>
+			</div>
+			<div class="nav__toggle" id="nav-toggle">
+				<i class="bx bx-menu"></i>
+			</div>
+		</nav>
+	</header>
+
+	<main class="l-main">
+
+		<!-- HOME -->
+		<section class="home" id="home">
+			<div class="home__top">
+				<span>◆ Cloud · DevOps · Full Stack</span>
+				<span>◆ Portfolio 2026</span>
+			</div>
+
+			<div class="home__data">
+				<h1 class="home__title">
+					<span class="word"><span class="word-inner">Hi, I'm</span></span><br/>
+					<span class="word"><span class="word-inner home__title-color">Alveera Ahmad</span></span>
+				</h1>
+				<p class="home__description">
+					A <em>Cloud Computing</em>, DevOps, and Full Stack Development enthusiast — designing, developing, and deploying scalable, secure, and efficient web and cloud-based solutions.
+				</p>
+				<a href="#contact" class="button" data-hover>Contact me →</a>
+
+				<div class="home__social">
+					<a href="https://www.linkedin.com/in/alveera-ahmad/" class="home__social-icon" target="_blank" data-hover><i class="bx bxl-linkedin"></i></a>
+					<a href="https://github.com/alveerraa" class="home__social-icon" target="_blank" data-hover><i class="bx bxl-github"></i></a>
+					<a href="https://www.instagram.com/alveerraa/" class="home__social-icon" target="_blank" data-hover><i class="bx bxl-instagram"></i></a>
+				</div>
+			</div>
+
+			<div class="home__bottom">
+				<div>
+					<div class="home__info-label">Available</div>
+					<div class="home__info-value">for opportunities</div>
+				</div>
+				<div>
+					<div class="home__info-label">Based in</div>
+					<div class="home__info-value">Patna, India</div>
+				</div>
+				<div>
+					<div class="home__info-label">Stack</div>
+					<div class="home__info-tags">
+						<span class="home__tag">AWS</span>
+						<span class="home__tag">Docker</span>
+						<span class="home__tag">K8s</span>
+						<span class="home__tag">Python</span>
+						<span class="home__tag">React</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="scroll-hint">
+				<span>scroll</span>
+				<div class="scroll-line"></div>
+			</div>
+		</section>
+
+		<!-- MARQUEE -->
+		<div class="marquee">
+			<div class="marquee-inner">
+				<span class="marquee-item">Cloud Architecture</span>
+				<span class="marquee-item">DevOps Engineering</span>
+				<span class="marquee-item">Full Stack Development</span>
+				<span class="marquee-item">AI Automation</span>
+				<span class="marquee-item">Scalable Systems</span>
+				<span class="marquee-item">Cloud Architecture</span>
+				<span class="marquee-item">DevOps Engineering</span>
+				<span class="marquee-item">Full Stack Development</span>
+				<span class="marquee-item">AI Automation</span>
+				<span class="marquee-item">Scalable Systems</span>
+			</div>
+		</div>
+
+		<!-- ABOUT -->
+		<section class="about section" id="about">
+			<div class="section__header">
+				<div>
+					<span class="section__num">/ 02</span>
+					<h2 class="section-title">About <em>me</em></h2>
+				</div>
+				<div class="section__meta">The person<br/>behind the code</div>
+			</div>
+
+			<div class="about__container bd-grid">
+				<div class="about__img" data-hover>
+					<img src="images/pic.jpeg" alt="Alveera Ahmad" />
+					<div class="about__img-label">
+						<span>ALVEERA AHMAD</span>
+						<span>2026 / IND</span>
+					</div>
+				</div>
+
+				<div>
+					<h2 class="about__subtitle">I'm Alveera.</h2>
+					<p class="about__text">
+						A passionate <em>Cloud Computing, DevOps</em>, and Full Stack Development enthusiast with expertise in AWS, Docker, Kubernetes, and AI-driven automation.
+					</p>
+					<p class="about__text">
+						I specialize in building scalable, secure, and efficient web and cloud-based solutions — from elegant frontends to robust backend infrastructure.
+					</p>
+					<p class="about__text">
+						I enjoy exploring new technologies and implementing real-world applications. In my free time, you'll find me with a book — fiction or non-fiction, both equally welcome.
+					</p>
+					<p class="about__text">
+						Let's connect and collaborate on cutting-edge cloud solutions that shape the <em>future</em>. 🚀
+					</p>
+
+					<div class="about__detail">
+						<span class="detail-label">Location</span>
+						<span class="detail-value">Patna, Bihar, India</span>
+						<span class="detail-label">Focus</span>
+						<span class="detail-value">Cloud architecture &amp; full stack systems</span>
+						<span class="detail-label">Currently</span>
+						<span class="detail-value">Open to internships &amp; collaborations</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SKILLS -->
+		<section class="skills section" id="skills">
+			<div class="section__header">
+				<div>
+					<span class="section__num">/ 03</span>
+					<h2 class="section-title">Skills &amp; <em>stack</em></h2>
+				</div>
+				<div class="section__meta">Tools of<br/>the trade</div>
+			</div>
+
+			<p class="skills__text">
+				Experienced in building scalable cloud solutions and full stack applications. Proficient in backend development, DevOps practices, and database optimization. Passionate about deployment automation and crafting seamless, user-centric digital experiences.
+			</p>
+
+			<div class="skills__container">
+				<div class="skills__data" data-hover>
+					<span class="skills__row-num">/ 01</span>
+					<div class="skills__names">
+						<i class="bx bxl-html5 skills__icon"></i>
+						<span class="skills__name">HTML5</span>
+					</div>
+					<div class="skills__bar skills__html"></div>
+					<span class="skills__percentage">75 / 100</span>
+				</div>
+
+				<div class="skills__data" data-hover>
+					<span class="skills__row-num">/ 02</span>
+					<div class="skills__names">
+						<i class="bx bxl-css3 skills__icon"></i>
+						<span class="skills__name">CSS3</span>
+					</div>
+					<div class="skills__bar skills__css"></div>
+					<span class="skills__percentage">75 / 100</span>
+				</div>
+
+				<div class="skills__data" data-hover>
+					<span class="skills__row-num">/ 03</span>
+					<div class="skills__names">
+						<i class="bx bxl-javascript skills__icon"></i>
+						<span class="skills__name">JavaScript</span>
+					</div>
+					<div class="skills__bar skills__mongo"></div>
+					<span class="skills__percentage">60 / 100</span>
+				</div>
+
+				<div class="skills__data" data-hover>
+					<span class="skills__row-num">/ 04</span>
+					<div class="skills__names">
+						<i class="bx bxl-react skills__icon"></i>
+						<span class="skills__name">React</span>
+					</div>
+					<div class="skills__bar skills__react"></div>
+					<span class="skills__percentage">50 / 100</span>
+				</div>
+
+				<div class="skills__data" data-hover>
+					<span class="skills__row-num">/ 05</span>
+					<div class="skills__names">
+						<i class="bx bxl-aws skills__icon"></i>
+						<span class="skills__name">AWS</span>
+					</div>
+					<div class="skills__bar skills__aws"></div>
+					<span class="skills__percentage">70 / 100</span>
+				</div>
+
+				<div class="skills__data" data-hover>
+					<span class="skills__row-num">/ 06</span>
+					<div class="skills__names">
+						<i class="bx bxl-docker skills__icon"></i>
+						<span class="skills__name">DevOps</span>
+					</div>
+					<div class="skills__bar skills__docker"></div>
+					<span class="skills__percentage">60 / 100</span>
+				</div>
+
+				<div class="skills__data" data-hover>
+					<span class="skills__row-num">/ 07</span>
+					<div class="skills__names">
+						<i class="bx bxl-python skills__icon"></i>
+						<span class="skills__name">Python</span>
+					</div>
+					<div class="skills__bar skills__python"></div>
+					<span class="skills__percentage">70 / 100</span>
+				</div>
+
+				<div class="skills__data" data-hover>
+					<span class="skills__row-num">/ 08</span>
+					<div class="skills__names">
+						<i class="bx bx-data skills__icon"></i>
+						<span class="skills__name">MySQL</span>
+					</div>
+					<div class="skills__bar skills__mysql"></div>
+					<span class="skills__percentage">70 / 100</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- WORK -->
+		<section class="work section" id="work">
+			<div class="section__header">
+				<div>
+					<span class="section__num">/ 04</span>
+					<h2 class="section-title">Selected <em>work</em></h2>
+				</div>
+				<div class="section__meta">Recent<br/>projects</div>
+			</div>
+
+			<div class="work__container">
+
+				<a href="https://github.com/alveerraa/petal-soft-productivity" target="_blank" class="work__card" data-hover data-img="images/petalos.png">
+					<span class="work__num">/ 01</span>
+					<div class="work__content">
+						<h3 class="work__title">PetalOS 🌸</h3>
+						<p class="work__description">
+							A calm, pixel-style desktop app for focus sessions with a timer, notes &amp; daily reflections, and visual progress through blooming flowers.
+						</p>
+						<div class="work__tags">
+							<span class="work__tag">Productivity</span>
+							<span class="work__tag">Desktop</span>
+						</div>
+					</div>
+					<div class="work__btn-wrap">
+						<span class="work__btn">View GitHub</span>
+						<span class="work__arrow">→</span>
+					</div>
+				</a>
+
+				<a href="https://github.com/alveerraa/My-Docker-Projects" target="_blank" class="work__card" data-hover data-img="images/docker.png">
+					<span class="work__num">/ 02</span>
+					<div class="work__content">
+						<h3 class="work__title">My Docker Projects</h3>
+						<p class="work__description">
+							A collection of containerized experiments, mastering Docker for scalability, portability &amp; real-world cloud deployment scenarios.
+						</p>
+						<div class="work__tags">
+							<span class="work__tag">DevOps</span>
+							<span class="work__tag">Containers</span>
+						</div>
+					</div>
+					<div class="work__btn-wrap">
+						<span class="work__btn">Visit GitHub</span>
+						<span class="work__arrow">→</span>
+					</div>
+				</a>
+
+				<a href="https://my-docker-projects-5uhnrhbwswnxrksw6nnt9m.streamlit.app/" target="_blank" class="work__card" data-hover data-img="images/titanic.png">
+					<span class="work__num">/ 03</span>
+					<div class="work__content">
+						<h3 class="work__title">Titanic Survival Predictor</h3>
+						<p class="work__description">
+							A machine learning model predicting survival chances on the Titanic using Python and scikit-learn — with a live Streamlit demo.
+						</p>
+						<div class="work__tags">
+							<span class="work__tag">ML</span>
+							<span class="work__tag">Python</span>
+							<span class="work__tag">Live</span>
+						</div>
+					</div>
+					<div class="work__btn-wrap">
+						<span class="work__btn">Live Demo</span>
+						<span class="work__arrow">→</span>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<!-- PHILOSOPHY -->
+		<section class="philosophy" id="philosophy">
+			<p class="philosophy-quote">
+				Code is craft. <span>Architecture is art.</span> The best systems disappear — they let people do what they came to do, beautifully.
+			</p>
+			<p class="philosophy-attr">Alveera Ahmad — Engineering Notes</p>
+		</section>
+
+		<!-- CONTACT -->
+		<section class="contact section" id="contact">
+			<div class="contact__cta">
+				<span class="contact__cta-line">Let's build</span>
+				<span class="contact__cta-line"><em>something</em> together.</span>
+			</div>
+
+			<div class="contact__container">
+				<div class="contact__info">
+					<span class="section__num">/ 05 — Contact</span>
+					<p class="contact__info-text">
+						Open to internships, full-time roles, cloud projects, or just nerdy conversations about <em>infrastructure</em> &amp; design.
+					</p>
+					<div class="contact__channels">
+						<a href="https://www.linkedin.com/in/alveera-ahmad/" target="_blank" class="contact__channel" data-hover>
+							<div class="contact__channel-icon"><i class="bx bxl-linkedin"></i></div>
+							<div>
+								<div class="contact__channel-label">LinkedIn</div>
+								<div class="contact__channel-value">/in/alveera-ahmad</div>
+							</div>
+						</a>
+						<a href="https://github.com/alveerraa" target="_blank" class="contact__channel" data-hover>
+							<div class="contact__channel-icon"><i class="bx bxl-github"></i></div>
+							<div>
+								<div class="contact__channel-label">GitHub</div>
+								<div class="contact__channel-value">/alveerraa</div>
+							</div>
+						</a>
+						<a href="https://www.instagram.com/alveerraa/" target="_blank" class="contact__channel" data-hover>
+							<div class="contact__channel-icon"><i class="bx bxl-instagram"></i></div>
+							<div>
+								<div class="contact__channel-label">Instagram</div>
+								<div class="contact__channel-value">@alveerraa</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<form action="" class="contact__form" id="contact-form">
+					<div class="form-group">
+						<label class="form-label">01 — Your Name</label>
+						<input type="text" placeholder="What should I call you?" class="contact__input" id="name" required />
+						<div class="error-message" id="name-error">Please enter your name</div>
+					</div>
+					<div class="form-group">
+						<label class="form-label">02 — Email</label>
+						<input type="email" placeholder="your@email.com" class="contact__input" id="email" required />
+						<div class="error-message" id="email-error">Please enter a valid email address</div>
+					</div>
+					<div class="form-group">
+						<label class="form-label">03 — Message</label>
+						<textarea id="message" cols="0" rows="6" class="contact__input" placeholder="Tell me about your project, idea, or just say hi…" required></textarea>
+						<div class="error-message" id="message-error">Please enter your message</div>
+					</div>
+					<button type="submit" class="contact__button button" id="sendMail" data-hover><span>Send Message →</span></button>
+					<div class="success-message" id="success-message">✓ Message sent successfully!</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__big">
+			<span>Alveera</span><em>Ahmad</em>
+		</div>
+		<div class="footer__bottom">
+			<p class="footer__copy">© 2026 — Designed &amp; built with care</p>
+			<p class="footer__location">Patna · India · Earth</p>
+			<div class="footer__social">
+				<a href="https://github.com/alveerraa" target="_blank" class="footer__icon" data-hover>GitHub</a>
+				<a href="https://www.linkedin.com/in/alveera-ahmad/" target="_blank" class="footer__icon" data-hover>LinkedIn</a>
+				<a href="https://www.instagram.com/alveerraa/" target="_blank" class="footer__icon" data-hover>Instagram</a>
+				<a href="Alveera_Resume.pdf" target="_blank" class="footer__icon" data-hover>Resume</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- SCROLL REVEAL -->
+	<script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
+	<!-- MAIN JS -->
+	<script src="main.js"></script>
+</body>
+</html>
